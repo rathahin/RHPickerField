@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>D217EE29-0542-485F-8C86-7759965A2C7C</string>
+	<key>IDESourceControlProjectName</key>
+	<string>RHPickerField</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>46355EB5-11A0-4EA4-96E1-0058E06E9512</key>
+		<string>https://github.com/rathahin/RHPickerField.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Source/RHPickerField/RHPickerField.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>46355EB5-11A0-4EA4-96E1-0058E06E9512</key>
+		<string>../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/rathahin/RHPickerField.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>46355EB5-11A0-4EA4-96E1-0058E06E9512</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>46355EB5-11A0-4EA4-96E1-0058E06E9512</string>
+			<key>IDESourceControlWCCName</key>
+			<string>RHPickerField</string>
+		</dict>
+	</array>
+</dict>
+</plist>

@@ -10,4 +10,7 @@
 
 @interface RHHighlightView : UIView
 
+- (void)updateLabelWithText:(NSString *)text;
+- (void)endUpdate;
+
 @end

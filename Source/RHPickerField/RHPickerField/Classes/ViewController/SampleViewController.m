@@ -72,7 +72,7 @@
   NSMutableArray *days = [[NSMutableArray alloc] init];
   
   for (int i= 0; i < 30 ; i++) {
-    [days addObject:[NSString stringWithFormat:@"%0.2d", i]];
+    [days addObject:[NSString stringWithFormat:@"%0.2d", i + 1]];
   }
   
   return [days copy];
@@ -82,10 +82,22 @@
   NSMutableArray *days = [[NSMutableArray alloc] init];
   
   for (int i= 1; i <= 12 ; i++) {
-    [days addObject:[NSString stringWithFormat:@"%0.2d", i]];
+    [days addObject:[NSString stringWithFormat:@"%@", [self monthNameString:i]]];
   }
   
   return [days copy];
+}
+
+-(NSString*)monthNameString:(int)monthNumber {
+  NSString * dateString = [NSString stringWithFormat: @"%d", monthNumber];
+  
+  NSDateFormatter* dateFormatter = [[NSDateFormatter alloc] init];
+  [dateFormatter setDateFormat:@"MM"];
+  NSDate* myDate = [dateFormatter dateFromString:dateString];
+  
+  NSDateFormatter* formatter = [[NSDateFormatter alloc] init];
+  [formatter setDateFormat:@"MMM"];
+  return [formatter stringFromDate:myDate];
 }
 
 - (NSArray *)year {

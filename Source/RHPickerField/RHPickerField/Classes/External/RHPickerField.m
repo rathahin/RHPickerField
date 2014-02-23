@@ -13,7 +13,7 @@
 
 NSString *const nibCell = @"PickerCellID";
 
-@interface RHPickerField () <UITableViewDelegate, UITableViewDataSource>
+@interface RHPickerField () <UITableViewDelegate, UITableViewDataSource, UIGestureRecognizerDelegate>
 
 @property (strong, nonatomic) NSMutableArray *tableViewCollection;
 @property (strong, nonatomic) NSMutableArray *highlightViewCollection;
@@ -157,6 +157,7 @@ NSString *const nibCell = @"PickerCellID";
     // pangesture
     UIPanGestureRecognizer *panGesture = [[UIPanGestureRecognizer alloc] initWithTarget:self
                                                                                  action:@selector(handlePan:)];
+    panGesture.delegate = self;
     [column addGestureRecognizer:panGesture];
     
     // highlight
@@ -237,17 +238,23 @@ NSString *const nibCell = @"PickerCellID";
   CGPoint targetPoint = [tableView convertPoint:cellPoint toView:self.pickerView];
   RHHighlightView *highlightView = (RHHighlightView *)self.highlightViewCollection[columnNumber];
   highlightView.center = targetPoint;
+  [highlightView updateLabelWithText:[tableView cellForRowAtIndexPath:indexPath].textLabel.text];
+  [highlightView endUpdate];
 }
 
 #pragma mark - action
 
 - (void)handlePan:(UIPanGestureRecognizer *)gesture {
-  UITableView *tableView = (UITableView *)gesture.view;
-  NSUInteger columnNumber = [self.tableViewCollection indexOfObject:tableView];
-  CGPoint moveTo = CGPointMake(CGRectGetMidX(tableView.frame), [gesture locationInView:self.pickerView].y);
-//  moveTo = [tableView convertPoint:moveTo toView:self.pickerView];
-  RHHighlightView *highlightView = (RHHighlightView *)self.highlightViewCollection[columnNumber];
-  highlightView.center = moveTo;
+  
+  NSLog(@"state => %d", gesture.state);
+  
+  if (gesture.state == UIGestureRecognizerStateBegan ||
+      gesture.state == UIGestureRecognizerStateChanged) {
+    [self moveHighlightWithPoint:[gesture locationInView:self.pickerView] restrictedInView:gesture.view];
+  } else if (gesture.state == UIGestureRecognizerStateEnded ||
+             gesture.state == UIGestureRecognizerStateCancelled) {
+    [self endMoveHighlightWithPoint:[gesture locationInView:self.pickerView] inView:gesture.view];
+  }
 }
 
 - (void)noAction {
@@ -259,20 +266,75 @@ NSString *const nibCell = @"PickerCellID";
 }
 
 - (void)longGestureHandle:(UILongPressGestureRecognizer *)gesture {
-  if (gesture.state == UIGestureRecognizerStateBegan)
-  {
+  if (gesture.state == UIGestureRecognizerStateBegan) {
     [self showPickerView];
-  }
-  else if (gesture.state == UIGestureRecognizerStateCancelled ||
+    
+    CGPoint location = [gesture locationInView:self.pickerView];
+    [self moveHighlightWithPoint:location restrictedInView:nil];
+    
+  } else if (gesture.state == UIGestureRecognizerStateChanged) {
+    
+    CGPoint location = [gesture locationInView:self.pickerView];
+    [self moveHighlightWithPoint:location restrictedInView:nil];
+    
+  } else if (gesture.state == UIGestureRecognizerStateCancelled ||
            gesture.state == UIGestureRecognizerStateFailed ||
-           gesture.state == UIGestureRecognizerStateEnded)
-  {
-    NSLog(@"End");
+           gesture.state == UIGestureRecognizerStateEnded) {
+    [self endMoveHighlightWithPoint:[gesture locationInView:self.pickerView] inView:nil];
   }
 }
 
+- (void)moveHighlightWithPoint:(CGPoint)location restrictedInView:(UIView *)view{
+  UITableView *tableView = nil;
+  
+  for (UITableView *eachTableView in self.tableViewCollection) {
+    
+    if (CGRectContainsPoint(eachTableView.frame, location)) {
+      tableView = eachTableView;
+      
+      BOOL shouldMoveHighlight = NO;
+      
+      if (!view || view == tableView) {
+        shouldMoveHighlight = YES;
+      }
+      
+      if (shouldMoveHighlight) {
+        NSUInteger columnNumber = [self.tableViewCollection indexOfObject:tableView];
+        CGPoint moveTo = CGPointMake(CGRectGetMidX(tableView.frame), location.y);
+        RHHighlightView *highlightView = (RHHighlightView *)self.highlightViewCollection[columnNumber];
+        highlightView.center = moveTo;
+        
+        UITableViewCell *hitCell = [tableView cellForRowAtIndexPath:[tableView indexPathForRowAtPoint:[self.pickerView convertPoint:location toView:tableView]]];
+        
+        [highlightView updateLabelWithText:hitCell.textLabel.text];
+      }
+      
+      break;
+    }
+    
+  }
+}
+
+- (void)endMoveHighlightWithPoint:(CGPoint)location inView:(UIView *)view{
+  UITableView *tableView = (UITableView *)view;
+  
+  if (!tableView) {
+    for (UITableView *eachTableView in self.tableViewCollection) {
+      
+      if (CGRectContainsPoint(eachTableView.frame, location)) {
+        tableView = eachTableView;
+        break;
+      }
+    }
+  }
+  
+  NSUInteger columnNumber = [self.tableViewCollection indexOfObject:tableView];
+  RHHighlightView *highlightView = (RHHighlightView *)self.highlightViewCollection[columnNumber];
+  [highlightView endUpdate];
+  
+}
+
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
-  NSLog(@"Holla");
   
   [RHAnimator animateLayer:self.backgroundLayer
               toFloatValue:1.0
@@ -287,6 +349,10 @@ NSString *const nibCell = @"PickerCellID";
                 forKeyPath:@"opacity"
                   duration:0.3
               animationKey:@"opacityOut"];
+}
+
+- (BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldRecognizeSimultaneouslyWithGestureRecognizer:(UIGestureRecognizer *)otherGestureRecognizer {
+  return NO;
 }
 
 @end
