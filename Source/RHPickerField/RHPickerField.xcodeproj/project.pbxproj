@@ -1,0 +1,527 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BA1A04C918B8972B009EBBF6 /* RHPickerFieldOption.m in Sources */ = {isa = PBXBuildFile; fileRef = BA1A04C818B8972B009EBBF6 /* RHPickerFieldOption.m */; };
+		BA1A04CC18B8C187009EBBF6 /* RHAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = BA1A04CB18B8C187009EBBF6 /* RHAnimator.m */; };
+		BA4277D318B8F1D400FAC915 /* UIColor+Extras.m in Sources */ = {isa = PBXBuildFile; fileRef = BA4277D218B8F1D400FAC915 /* UIColor+Extras.m */; };
+		BA78C20F18B7A5D3003B3262 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA78C20E18B7A5D3003B3262 /* Foundation.framework */; };
+		BA78C21118B7A5D3003B3262 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA78C21018B7A5D3003B3262 /* CoreGraphics.framework */; };
+		BA78C21318B7A5D3003B3262 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA78C21218B7A5D3003B3262 /* UIKit.framework */; };
+		BA78C21918B7A5D3003B3262 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BA78C21718B7A5D3003B3262 /* InfoPlist.strings */; };
+		BA78C21B18B7A5D3003B3262 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BA78C21A18B7A5D3003B3262 /* main.m */; };
+		BA78C21F18B7A5D3003B3262 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BA78C21E18B7A5D3003B3262 /* AppDelegate.m */; };
+		BA78C22118B7A5D3003B3262 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA78C22018B7A5D3003B3262 /* Images.xcassets */; };
+		BA78C22818B7A5D3003B3262 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA78C22718B7A5D3003B3262 /* XCTest.framework */; };
+		BA78C22918B7A5D3003B3262 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA78C20E18B7A5D3003B3262 /* Foundation.framework */; };
+		BA78C22A18B7A5D3003B3262 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA78C21218B7A5D3003B3262 /* UIKit.framework */; };
+		BA78C23218B7A5D3003B3262 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BA78C23018B7A5D3003B3262 /* InfoPlist.strings */; };
+		BA78C23418B7A5D3003B3262 /* RHPickerFieldTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BA78C23318B7A5D3003B3262 /* RHPickerFieldTests.m */; };
+		BA78C24518B7A71A003B3262 /* SampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA78C24418B7A71A003B3262 /* SampleViewController.m */; };
+		BA78C24918B7A9A3003B3262 /* RHPickerField.m in Sources */ = {isa = PBXBuildFile; fileRef = BA78C24818B7A9A3003B3262 /* RHPickerField.m */; };
+		BA78C24C18B7A9D4003B3262 /* RHPickerFieldController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA78C24B18B7A9D4003B3262 /* RHPickerFieldController.m */; };
+		BADA168618B9844E0048C78C /* PickerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BADA168518B9844E0048C78C /* PickerCell.m */; };
+		BAE171DA18B9B56B00823EB4 /* RHHighlightView.m in Sources */ = {isa = PBXBuildFile; fileRef = BAE171D918B9B56B00823EB4 /* RHHighlightView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BA78C22B18B7A5D3003B3262 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BA78C20318B7A5D3003B3262 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BA78C20A18B7A5D3003B3262;
+			remoteInfo = RHPickerField;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		BA1A04C718B8972B009EBBF6 /* RHPickerFieldOption.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RHPickerFieldOption.h; sourceTree = "<group>"; };
+		BA1A04C818B8972B009EBBF6 /* RHPickerFieldOption.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RHPickerFieldOption.m; sourceTree = "<group>"; };
+		BA1A04CA18B8C187009EBBF6 /* RHAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RHAnimator.h; sourceTree = "<group>"; };
+		BA1A04CB18B8C187009EBBF6 /* RHAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RHAnimator.m; sourceTree = "<group>"; };
+		BA4277D118B8F1D400FAC915 /* UIColor+Extras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Extras.h"; sourceTree = "<group>"; };
+		BA4277D218B8F1D400FAC915 /* UIColor+Extras.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Extras.m"; sourceTree = "<group>"; };
+		BA78C20B18B7A5D3003B3262 /* RHPickerField.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RHPickerField.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA78C20E18B7A5D3003B3262 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		BA78C21018B7A5D3003B3262 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		BA78C21218B7A5D3003B3262 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		BA78C21618B7A5D3003B3262 /* RHPickerField-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RHPickerField-Info.plist"; sourceTree = "<group>"; };
+		BA78C21818B7A5D3003B3262 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		BA78C21A18B7A5D3003B3262 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		BA78C21C18B7A5D3003B3262 /* RHPickerField-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RHPickerField-Prefix.pch"; sourceTree = "<group>"; };
+		BA78C21D18B7A5D3003B3262 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		BA78C21E18B7A5D3003B3262 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		BA78C22018B7A5D3003B3262 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		BA78C22618B7A5D3003B3262 /* RHPickerFieldTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RHPickerFieldTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA78C22718B7A5D3003B3262 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		BA78C22F18B7A5D3003B3262 /* RHPickerFieldTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RHPickerFieldTests-Info.plist"; sourceTree = "<group>"; };
+		BA78C23118B7A5D3003B3262 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		BA78C23318B7A5D3003B3262 /* RHPickerFieldTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RHPickerFieldTests.m; sourceTree = "<group>"; };
+		BA78C24318B7A71A003B3262 /* SampleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SampleViewController.h; path = RHPickerField/Classes/ViewController/SampleViewController.h; sourceTree = SOURCE_ROOT; };
+		BA78C24418B7A71A003B3262 /* SampleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SampleViewController.m; path = RHPickerField/Classes/ViewController/SampleViewController.m; sourceTree = SOURCE_ROOT; };
+		BA78C24718B7A9A3003B3262 /* RHPickerField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RHPickerField.h; sourceTree = "<group>"; };
+		BA78C24818B7A9A3003B3262 /* RHPickerField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RHPickerField.m; sourceTree = "<group>"; };
+		BA78C24A18B7A9D4003B3262 /* RHPickerFieldController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RHPickerFieldController.h; sourceTree = "<group>"; };
+		BA78C24B18B7A9D4003B3262 /* RHPickerFieldController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RHPickerFieldController.m; sourceTree = "<group>"; };
+		BADA168418B9844E0048C78C /* PickerCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PickerCell.h; sourceTree = "<group>"; };
+		BADA168518B9844E0048C78C /* PickerCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PickerCell.m; sourceTree = "<group>"; };
+		BAE171D818B9B56B00823EB4 /* RHHighlightView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RHHighlightView.h; sourceTree = "<group>"; };
+		BAE171D918B9B56B00823EB4 /* RHHighlightView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RHHighlightView.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BA78C20818B7A5D3003B3262 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA78C21118B7A5D3003B3262 /* CoreGraphics.framework in Frameworks */,
+				BA78C21318B7A5D3003B3262 /* UIKit.framework in Frameworks */,
+				BA78C20F18B7A5D3003B3262 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BA78C22318B7A5D3003B3262 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA78C22818B7A5D3003B3262 /* XCTest.framework in Frameworks */,
+				BA78C22A18B7A5D3003B3262 /* UIKit.framework in Frameworks */,
+				BA78C22918B7A5D3003B3262 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BA78C20218B7A5D3003B3262 = {
+			isa = PBXGroup;
+			children = (
+				BA78C21418B7A5D3003B3262 /* RHPickerField */,
+				BA78C22D18B7A5D3003B3262 /* RHPickerFieldTests */,
+				BA78C20D18B7A5D3003B3262 /* Frameworks */,
+				BA78C20C18B7A5D3003B3262 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BA78C20C18B7A5D3003B3262 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BA78C20B18B7A5D3003B3262 /* RHPickerField.app */,
+				BA78C22618B7A5D3003B3262 /* RHPickerFieldTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BA78C20D18B7A5D3003B3262 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BA78C20E18B7A5D3003B3262 /* Foundation.framework */,
+				BA78C21018B7A5D3003B3262 /* CoreGraphics.framework */,
+				BA78C21218B7A5D3003B3262 /* UIKit.framework */,
+				BA78C22718B7A5D3003B3262 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BA78C21418B7A5D3003B3262 /* RHPickerField */ = {
+			isa = PBXGroup;
+			children = (
+				BA78C23D18B7A68F003B3262 /* Classes */,
+				BA78C21D18B7A5D3003B3262 /* AppDelegate.h */,
+				BA78C21E18B7A5D3003B3262 /* AppDelegate.m */,
+				BA78C22018B7A5D3003B3262 /* Images.xcassets */,
+				BA78C21518B7A5D3003B3262 /* Supporting Files */,
+			);
+			path = RHPickerField;
+			sourceTree = "<group>";
+		};
+		BA78C21518B7A5D3003B3262 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BA78C21618B7A5D3003B3262 /* RHPickerField-Info.plist */,
+				BA78C21718B7A5D3003B3262 /* InfoPlist.strings */,
+				BA78C21A18B7A5D3003B3262 /* main.m */,
+				BA78C21C18B7A5D3003B3262 /* RHPickerField-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BA78C22D18B7A5D3003B3262 /* RHPickerFieldTests */ = {
+			isa = PBXGroup;
+			children = (
+				BA78C23318B7A5D3003B3262 /* RHPickerFieldTests.m */,
+				BA78C22E18B7A5D3003B3262 /* Supporting Files */,
+			);
+			path = RHPickerFieldTests;
+			sourceTree = "<group>";
+		};
+		BA78C22E18B7A5D3003B3262 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BA78C22F18B7A5D3003B3262 /* RHPickerFieldTests-Info.plist */,
+				BA78C23018B7A5D3003B3262 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BA78C23D18B7A68F003B3262 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				BA78C24618B7A954003B3262 /* External */,
+				BA78C23E18B7A6A3003B3262 /* ViewController */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		BA78C23E18B7A6A3003B3262 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				BA78C24318B7A71A003B3262 /* SampleViewController.h */,
+				BA78C24418B7A71A003B3262 /* SampleViewController.m */,
+			);
+			name = ViewController;
+			path = Classes/ViewController;
+			sourceTree = "<group>";
+		};
+		BA78C24618B7A954003B3262 /* External */ = {
+			isa = PBXGroup;
+			children = (
+				BA4277D118B8F1D400FAC915 /* UIColor+Extras.h */,
+				BA4277D218B8F1D400FAC915 /* UIColor+Extras.m */,
+				BA78C24718B7A9A3003B3262 /* RHPickerField.h */,
+				BA78C24818B7A9A3003B3262 /* RHPickerField.m */,
+				BA78C24A18B7A9D4003B3262 /* RHPickerFieldController.h */,
+				BA78C24B18B7A9D4003B3262 /* RHPickerFieldController.m */,
+				BA1A04C718B8972B009EBBF6 /* RHPickerFieldOption.h */,
+				BA1A04C818B8972B009EBBF6 /* RHPickerFieldOption.m */,
+				BA1A04CA18B8C187009EBBF6 /* RHAnimator.h */,
+				BA1A04CB18B8C187009EBBF6 /* RHAnimator.m */,
+				BADA168418B9844E0048C78C /* PickerCell.h */,
+				BADA168518B9844E0048C78C /* PickerCell.m */,
+				BAE171D818B9B56B00823EB4 /* RHHighlightView.h */,
+				BAE171D918B9B56B00823EB4 /* RHHighlightView.m */,
+			);
+			path = External;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BA78C20A18B7A5D3003B3262 /* RHPickerField */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BA78C23718B7A5D3003B3262 /* Build configuration list for PBXNativeTarget "RHPickerField" */;
+			buildPhases = (
+				BA78C20718B7A5D3003B3262 /* Sources */,
+				BA78C20818B7A5D3003B3262 /* Frameworks */,
+				BA78C20918B7A5D3003B3262 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RHPickerField;
+			productName = RHPickerField;
+			productReference = BA78C20B18B7A5D3003B3262 /* RHPickerField.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BA78C22518B7A5D3003B3262 /* RHPickerFieldTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BA78C23A18B7A5D3003B3262 /* Build configuration list for PBXNativeTarget "RHPickerFieldTests" */;
+			buildPhases = (
+				BA78C22218B7A5D3003B3262 /* Sources */,
+				BA78C22318B7A5D3003B3262 /* Frameworks */,
+				BA78C22418B7A5D3003B3262 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BA78C22C18B7A5D3003B3262 /* PBXTargetDependency */,
+			);
+			name = RHPickerFieldTests;
+			productName = RHPickerFieldTests;
+			productReference = BA78C22618B7A5D3003B3262 /* RHPickerFieldTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BA78C20318B7A5D3003B3262 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Ratha Hin";
+				TargetAttributes = {
+					BA78C22518B7A5D3003B3262 = {
+						TestTargetID = BA78C20A18B7A5D3003B3262;
+					};
+				};
+			};
+			buildConfigurationList = BA78C20618B7A5D3003B3262 /* Build configuration list for PBXProject "RHPickerField" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = BA78C20218B7A5D3003B3262;
+			productRefGroup = BA78C20C18B7A5D3003B3262 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BA78C20A18B7A5D3003B3262 /* RHPickerField */,
+				BA78C22518B7A5D3003B3262 /* RHPickerFieldTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BA78C20918B7A5D3003B3262 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA78C21918B7A5D3003B3262 /* InfoPlist.strings in Resources */,
+				BA78C22118B7A5D3003B3262 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BA78C22418B7A5D3003B3262 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA78C23218B7A5D3003B3262 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BA78C20718B7A5D3003B3262 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA78C21F18B7A5D3003B3262 /* AppDelegate.m in Sources */,
+				BADA168618B9844E0048C78C /* PickerCell.m in Sources */,
+				BA78C24C18B7A9D4003B3262 /* RHPickerFieldController.m in Sources */,
+				BAE171DA18B9B56B00823EB4 /* RHHighlightView.m in Sources */,
+				BA4277D318B8F1D400FAC915 /* UIColor+Extras.m in Sources */,
+				BA78C21B18B7A5D3003B3262 /* main.m in Sources */,
+				BA78C24918B7A9A3003B3262 /* RHPickerField.m in Sources */,
+				BA78C24518B7A71A003B3262 /* SampleViewController.m in Sources */,
+				BA1A04CC18B8C187009EBBF6 /* RHAnimator.m in Sources */,
+				BA1A04C918B8972B009EBBF6 /* RHPickerFieldOption.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BA78C22218B7A5D3003B3262 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA78C23418B7A5D3003B3262 /* RHPickerFieldTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BA78C22C18B7A5D3003B3262 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BA78C20A18B7A5D3003B3262 /* RHPickerField */;
+			targetProxy = BA78C22B18B7A5D3003B3262 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BA78C21718B7A5D3003B3262 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BA78C21818B7A5D3003B3262 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		BA78C23018B7A5D3003B3262 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BA78C23118B7A5D3003B3262 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BA78C23518B7A5D3003B3262 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		BA78C23618B7A5D3003B3262 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BA78C23818B7A5D3003B3262 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RHPickerField/RHPickerField-Prefix.pch";
+				INFOPLIST_FILE = "RHPickerField/RHPickerField-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		BA78C23918B7A5D3003B3262 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RHPickerField/RHPickerField-Prefix.pch";
+				INFOPLIST_FILE = "RHPickerField/RHPickerField-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		BA78C23B18B7A5D3003B3262 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/RHPickerField.app/RHPickerField";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RHPickerField/RHPickerField-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "RHPickerFieldTests/RHPickerFieldTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		BA78C23C18B7A5D3003B3262 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/RHPickerField.app/RHPickerField";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RHPickerField/RHPickerField-Prefix.pch";
+				INFOPLIST_FILE = "RHPickerFieldTests/RHPickerFieldTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BA78C20618B7A5D3003B3262 /* Build configuration list for PBXProject "RHPickerField" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BA78C23518B7A5D3003B3262 /* Debug */,
+				BA78C23618B7A5D3003B3262 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BA78C23718B7A5D3003B3262 /* Build configuration list for PBXNativeTarget "RHPickerField" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BA78C23818B7A5D3003B3262 /* Debug */,
+				BA78C23918B7A5D3003B3262 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BA78C23A18B7A5D3003B3262 /* Build configuration list for PBXNativeTarget "RHPickerFieldTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BA78C23B18B7A5D3003B3262 /* Debug */,
+				BA78C23C18B7A5D3003B3262 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BA78C20318B7A5D3003B3262 /* Project object */;
+}
