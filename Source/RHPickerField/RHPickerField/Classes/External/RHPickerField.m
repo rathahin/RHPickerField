@@ -307,11 +307,34 @@ NSString *const nibCell = @"PickerCellID";
         UITableViewCell *hitCell = [tableView cellForRowAtIndexPath:[tableView indexPathForRowAtPoint:[self.pickerView convertPoint:location toView:tableView]]];
         
         [highlightView updateLabelWithText:hitCell.textLabel.text];
+        [self scrollTableViewIfNeededWithCell:hitCell tableView:tableView];
       }
       
       break;
     }
     
+  }
+}
+
+- (void)scrollTableViewIfNeededWithCell:(UITableViewCell *)cell tableView:(UITableView *)tableView {
+  
+  NSArray *visibleCell = tableView.visibleCells;
+  NSIndexPath *cellIndexPath = [tableView indexPathForCell:cell];
+  NSIndexPath *indexPath;
+  UITableViewScrollPosition scrollPosition = UITableViewScrollPositionBottom;
+  
+  if (cell == [visibleCell firstObject] && [cellIndexPath row] > 0) {
+    indexPath = [NSIndexPath indexPathForRow:[cellIndexPath row] - 1
+                                                inSection:[cellIndexPath section]];
+    scrollPosition = UITableViewScrollPositionTop;
+  } else if (cell == [visibleCell lastObject] && [cellIndexPath row] < [tableView numberOfRowsInSection:[cellIndexPath section]] - 1) {
+    indexPath = [NSIndexPath indexPathForRow:[cellIndexPath row] + 1
+                                   inSection:[cellIndexPath section]];
+    scrollPosition = UITableViewScrollPositionBottom;
+  }
+  
+  if (indexPath) {
+    [tableView scrollToRowAtIndexPath:indexPath atScrollPosition:scrollPosition animated:YES];
   }
 }
 
